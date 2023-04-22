@@ -33,11 +33,11 @@ var Status;
     Status[Status["LOADING"] = 0] = "LOADING";
     Status[Status["READY"] = 1] = "READY";
 })(Status || (Status = {}));
-var status1 = Status.LOADING;
+var status1;
 if (status1 === Status.LOADING) {
     console.log("The App is loading...");
 }
-else {
+if (status1 === Status.READY) {
     console.log("Done!");
 }
 //
